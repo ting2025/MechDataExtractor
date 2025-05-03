@@ -1,5 +1,6 @@
-# ArrowRemoval
-We introduce a method of pretreatment of molecular images in OSCR tasks. 
+# MechDataExtractor
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/99719931-00e9-471b-a2a8-e1d75b9fb945" />
+
 
 ## Usage
 **Use a conda environment for clean installation**

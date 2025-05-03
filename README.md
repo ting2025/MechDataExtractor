@@ -1,5 +1,5 @@
 # MechDataExtractor
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/99719931-00e9-471b-a2a8-e1d75b9fb945" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/99719931-00e9-471b-a2a8-e1d75b9fb945" />
 
 
 ## Usage

@@ -47,12 +47,3 @@ Find the [images](https://huggingface.co/datasets/Ting25/MechRxn/blob/main/ver_m
 Note that the dataset includes errors still even though it performs better with preprocessing of arrow removals. This dataset does not aim to serve as a benchmark, but more of a centralized and unified collection of reaction that benefit future researches in both chemistry and computer vision.
 
 
-
-
-## Updates
-12/7/24 Repository created. Code coming soon.<br/>
-14/7/24 Code updated.<br/>
-7/8/24 Training data uploaded. <br/>
-12/9/24 Reaction mechanism dataset uploaded. <br/>
-26/9/24 Reaction mechanism dataset parsed and uploaded. <br/>
-

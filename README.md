@@ -38,12 +38,21 @@ $ python predict.py -i image1.jpg image2.jpg --viz --no-save
 ## Application on Chemical Reaction Mechanism Images
 We collected 296 reaction mechanism images from textbook: Named Reactions 4th edition (Li, 2009). <br/>
 
-**Usage**<br/>
+### Usage
 Each image is named with its reaction name. The images are processed with this model and parsed by RxnScribe (Qian, 2023).
 it contains information such as predicted molecular identity, positions and reaction conditions. 
 Find the [images](https://huggingface.co/datasets/Ting25/MechRxn/blob/main/ver_mech.zip) and [parsed dataset](rxn_data/batch_prediction.json). <br/>
 
-**Disclaimer**<br/>
+### Image Postprocessing
+This architecture is mainly used for noise removal in chemical reaction mechanism images. In order to remove the noise segmented out in the original image, use `process.py` for overlaying the image mask and the original image.
+```python
+imgs_path = "ver_mech/"
+masks_path = "mechrxn_arrowmask/"
+processed_path = "mechrxn_processed/"
+```
+`imgs_path` is the original image folder path; `masks_path` is the images masks obtain with U-Net; `processed_path` can be renamed for your own interest. 
+
+### Disclaimer
 Note that the dataset includes errors still even though it performs better with preprocessing of arrow removals. This dataset does not aim to serve as a benchmark, but more of a centralized and unified collection of reaction that benefit future researches in both chemistry and computer vision.
 
 

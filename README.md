@@ -22,7 +22,7 @@ Run the training script or train.py.
 $ sbatch scripts/train.sh
 ```
 Save the best checkpoint to MODEL.pth<br/>
-A pretrained checkpoint is saved to: `checkpoint.pth`. If you want to use this checkpoint, simply `-m checkpoint.pth` after downloading it and put in your root directory.
+A pretrained checkpoint is saved to: `checkpoint.pth` in [huggingface](https://huggingface.co/datasets/Ting25/MechRxn/blob/main/checkpoint.pth). If you want to use this checkpoint, simply `-m checkpoint.pth` after downloading it and put in your root directory.
 
 **Prediction**<br/>
 After training your model and saving it to MODEL.pth, you can easily test the output masks on your images via the CLI.

@@ -22,6 +22,7 @@ Run the training script or train.py.
 $ sbatch scripts/train.sh
 ```
 Save the best checkpoint to MODEL.pth<br/>
+A pretrained checkpoint is saved to: `checkpoint.pth`. If you want to use this checkpoint, simply `-m checkpoint.pth` after downloading it and put in your root directory.
 
 **Prediction**<br/>
 After training your model and saving it to MODEL.pth, you can easily test the output masks on your images via the CLI.
@@ -34,6 +35,7 @@ To predict a multiple images and show them without saving them:
 ```
 $ python predict.py -i image1.jpg image2.jpg --viz --no-save
 ```
+For batch predictions, use `scripts/predict.sh` after setting up the bash environment. Feel free to change the input directory and the output directory for further accomodating your task.
 
 ## Application on Chemical Reaction Mechanism Images
 We collected 296 reaction mechanism images from textbook: Named Reactions 4th edition (Li, 2009). <br/>

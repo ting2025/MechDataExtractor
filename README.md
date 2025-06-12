@@ -45,6 +45,11 @@ Each image is named with its reaction name. The images are processed with this m
 it contains information such as predicted molecular identity, positions and reaction conditions. 
 Find the [images](https://huggingface.co/datasets/Ting25/MechRxn/blob/main/ver_mech.zip) and [parsed dataset](rxn_data/batch_prediction.json). <br/>
 
+### Results
+| Dess-Martin periodinane oxidation | Corresponding object masks |
+|:-------------------------------:|:--------------------------------:|
+| ![First Image](https://github.com/user-attachments/assets/a944c42b-e7ba-4b8f-8b84-9731b4807d29) | ![Second Image](https://github.com/user-attachments/assets/26e4fa11-b028-4b24-8dd8-70f643767748) |
+
 ### Image Postprocessing
 This architecture is mainly used for noise removal in chemical reaction mechanism images. In order to remove the noise segmented out in the original image, use `process.py` for overlaying the image mask and the original image.
 ```python
@@ -53,12 +58,6 @@ masks_path = "mechrxn_arrowmask/"
 processed_path = "mechrxn_processed/"
 ```
 `imgs_path` is the original image folder path; `masks_path` is the images masks obtain with U-Net; `processed_path` can be renamed for your own interest. 
-
-### Results
-| Dess-Martin periodinane oxidation | Corresponding object masks |
-|:-------------------------------:|:--------------------------------:|
-| ![First Image](https://github.com/user-attachments/assets/a944c42b-e7ba-4b8f-8b84-9731b4807d29) | ![Second Image](https://github.com/user-attachments/assets/26e4fa11-b028-4b24-8dd8-70f643767748) |
-
 
 ### Disclaimer
 Note that the dataset includes errors still even though it performs better with preprocessing of arrow removals. This dataset does not aim to serve as a benchmark, but more of a centralized and unified collection of reaction that benefit future researches in both chemistry and computer vision.

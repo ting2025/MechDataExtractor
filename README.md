@@ -21,7 +21,7 @@ Run the training script or train.py.
 ```
 $ sbatch scripts/train.sh
 ```
-Save the best checkpoint to MODEL.pth<br/>
+Save the best checkpoint to `MODEL.pth`<br/>
 A pretrained checkpoint is saved to: `checkpoint.pth` in [huggingface](https://huggingface.co/datasets/Ting25/MechRxn/blob/main/checkpoint.pth). If you want to use this checkpoint, simply `-m checkpoint.pth` after downloading it and put in your root directory.
 
 **Prediction**<br/>
@@ -62,4 +62,8 @@ processed_path = "mechrxn_processed/"
 ### Disclaimer
 Note that the dataset includes errors still even though it performs better with preprocessing of arrow removals. This dataset does not aim to serve as a benchmark, but more of a centralized and unified collection of reaction that benefit future researches in both chemistry and computer vision.
 
+## References
+The original U-Net paper: [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+The model took reference from [Milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet)
+Molecular and reaction information extraction is employed by models from [thomas0809/Molscribe](https://github.com/thomas0809/MolScribe) and [thomas0809/RxnScribe](https://github.com/thomas0809/RxnScribe)
 

@@ -5,17 +5,17 @@ version: "0.1.0"
 date-released: 2025-06-12
 
 authors:
-  - family-names: "Ching Ting"
-    given-names: "Leung"
+  - family-names: "Leung"
+    given-names: "Ching Ting"
     orcid: "https://orcid.org/0009-0005-3106-3367"
     affiliation: "Hong Kong University of Science and Technology"
 
-  - family-names: "Yufan"
-    given-names: "Chen"
+  - family-names: "Chen"
+    given-names: "Yufan"
     affiliation: "Hong Kong University of Science and Technology"
 
-  - family-names: "Hanyu"
-    given-names: "Gao"
+  - family-names: "Gao"
+    given-names: "Hanyu"
     affiliation: "Hong Kong University of Science and Technology"
 
 keywords:

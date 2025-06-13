@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "MechDatExtractor"
+version: "0.1.0"
+date-released: 2025-06-12
+
+authors:
+  - family-names: "Ching Ting"
+    given-names: "Leung"
+    orcid: "https://orcid.org/0009-0005-3106-3367"
+    affiliation: "Hong Kong University of Science and Technology"
+
+  - family-names: "Yufan"
+    given-names: "Chen"
+    affiliation: "Hong Kong University of Science and Technology"
+
+  - family-names: "Hanyu"
+    given-names: "Gao"
+    affiliation: "Hong Kong University of Science and Technology"
+
+keywords:
+  - U-Net
+  - cheminformatics
+  - object recognition
+
+license: "MIT"
+repository-code: "https://github.com/ting2025/MechDataExtractor"
+

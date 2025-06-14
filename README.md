@@ -37,6 +37,51 @@ $ python predict.py -i image1.jpg image2.jpg --viz --no-save
 ```
 For batch predictions, use `scripts/predict.sh` after setting up the bash environment. Feel free to change the input directory and the output directory for further accomodating your task.
 
+### Model result visualisations
+To directly utilize the model for arrow removal, we provide the function `predict_and_process.py` here to directly use the default functions and checkpoints we had,
+
+1. **Clone or download** this repo and make sure you have `predict_and_postprocess.py` in your working directory.  
+2. Install any dependencies by `requirements.py`
+3. **Prepare your input**  
+   - Create a folder (e.g. `test/`) and drop in your images (`.jpg`, `.png`, etc.).
+4. **Run the script**  
+   ```bash
+   python predict_and_postprocess.py \
+     --model MODEL.pth \
+     --input test/
+### Command-line arguments
+
+| Flag                     | Description                                                     | Default           |
+| ------------------------ | --------------------------------------------------------------- | ----------------- |
+| `-m`, `--model`          | Path to your trained `.pth` model file                          | `MODEL.pth`       |
+| `-i`, `--input`          | **Required.** Input image file **or** folder                    | —                 |
+| `-o`, `--output`         | Output directory for masks (`output/<input_name>/` if you omit) | `output/<input>/` |
+| `-n`, `--no-save`        | Don’t save mask images                                          | *false*           |
+| `-v`, `--viz`            | Pop up each image+mask for visual inspection                    | *false*           |
+| `-t`, `--mask-threshold` | Binarization cutoff (0 – 1)                                     | `0.5`             |
+| `-s`, `--scale`          | Scale factor for resizing input                                 | `0.5`             |
+| `--bilinear`             | Use bilinear upsampling                                         | *true*            |
+| `-c`, `--classes`        | Number of classes                                               | `1`               |
+
+**Expected output**
+
+* **Mask images** go to
+
+  ```
+  output/<input_folder_name>/
+    ├─ img1_OUT.png
+    ├─ img2_OUT.png
+    └─ ...
+  ```
+* **Post-processed images** (white-painted, single-channel) go to
+
+  ```
+  processed/<input_folder_name>/
+    ├─ img1.png
+    ├─ img2.png
+    └─ ...
+  ```
+
 ## Application on Chemical Reaction Mechanism Images
 We collected 296 reaction mechanism images from textbook: Named Reactions 4th edition (Li, 2009). <br/>
 

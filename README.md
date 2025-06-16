@@ -103,6 +103,8 @@ masks_path = "mechrxn_arrowmask/"
 processed_path = "mechrxn_processed/"
 ```
 `imgs_path` is the original image folder path; `masks_path` is the images masks obtain with U-Net; `processed_path` can be renamed for your own interest. 
+![image](https://github.com/user-attachments/assets/50f9c3df-d433-4159-b78b-90d37afae10d)
+
 
 ### Disclaimer
 Note that the dataset includes errors still even though it performs better with preprocessing of arrow removals. This dataset does not aim to serve as a benchmark, but more of a centralized and unified collection of reaction that benefit future researches in both chemistry and computer vision.
